@@ -30,7 +30,7 @@ int main() {
         }
     }
 
-    printf("Sorted array: ");
+    printf("Sorted array by selection sort: ");
     for (i = 0; i < n; i++) {
         printf("%d ", a[i]);
     }
