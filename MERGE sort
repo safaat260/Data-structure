@@ -44,7 +44,7 @@ int main() {
 
     mergeSort(A, 0, n - 1);
 
-    printf("Sorted array: ");
+    printf("Sorted array by Merge sort: ");
     for (int i = 0; i < n; i++) {
         printf("%d ", A[i]);
     }
