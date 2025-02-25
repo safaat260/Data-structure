@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main(){
 
-int arr[10], s, i, j, key;
+int arr[10], s, i, j, temp;
 
 printf("Enter array size: ");
 scanf("%d", &s);
@@ -13,13 +13,13 @@ for(i = 0; i < s; i++){
 }
 
 for(i = 1; i < s; i++){
-    key = arr[i];
+    temp = arr[i];
     j = i - 1;
-    while(j >= 0 && arr[j] > key){
+    while(j >= 0 && arr[j] > temp){
         arr[j + 1] = arr[j];
         j--;
     }
-    arr[j + 1] = key;
+    arr[j + 1] = temp;
 }
 
 printf("array sorted in ascending order: ");
